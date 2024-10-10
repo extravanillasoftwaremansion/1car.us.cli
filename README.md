@@ -25,7 +25,7 @@ npm install -g 1car.us.cli
 To create a new project, use the following command:
 
 ```bash
-1carus create <project-name>
+icarus create <project-name>
 ```
 
 Replace `<project-name>` with the desired name for your project.
@@ -33,7 +33,7 @@ Replace `<project-name>` with the desired name for your project.
 ### Example
 
 ```bash
-1carus create my-new-project
+icarus create my-new-project
 ```
 
 This command will:

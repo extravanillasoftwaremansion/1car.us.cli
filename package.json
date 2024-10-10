@@ -1,15 +1,19 @@
 {
   "name": "1car.us.cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CLI tool for the 1car.us framework.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "bin": {
     "icarus": "./dist/index.js"
   },
   "scripts": {
     "link": "bash link.sh",
     "build": "tsc",
-    "build:link": "npm run build && npm run link"
+    "build:link": "npm run build && npm run link",
+    "publish": "npm publish -access public"
   },
   "keywords": [
     "HTML",
@@ -18,12 +22,14 @@
   ],
   "author": "Prince Ashton James Snow Morris Jefferson",
   "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
   "devDependencies": {
     "@types/node": "^20.11.6",
     "glob": "^10.3.10",
     "typescript": "^5.2.2",
     "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
-    "commander": "^11.0.0"
+    "webpack-cli": "^5.1.4"
   }
 }

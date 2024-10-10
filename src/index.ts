@@ -21,8 +21,8 @@ import {
 const program = new Command();
 
 program
-  .version("1.0.0")
-  .description("CLI for creating a new project with 1car.us setup");
+  .version("0.0.1")
+  .description("CLI for creating a new project with 1car.us.");
 
 program
   .command("create <project-name>")
@@ -107,5 +107,15 @@ program
       }
     });
   });
+
+program
+  .command("create component <component-name>")
+  .description("Create a new component")
+  .action(async (componentName: string) => {});
+
+program
+  .command("create page <page-name>")
+  .description("Create a new page")
+  .action(async (pageName: string) => {});
 
 program.parse(process.argv);
